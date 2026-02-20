@@ -20,3 +20,6 @@ What you would improve on with more time
 - repository pattern
 - async / threading cancellation of api request if request exceed specific amount of time
 - refactor
+
+user: admin@admin.com
+pw: P@ssw0rd@123
