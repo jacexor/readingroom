@@ -22,4 +22,4 @@ What you would improve on with more time
 - refactor
 
 user: admin@admin.com
-pw: P@ssw0rd@123
+pw: 4D47lR2w4AQ1
