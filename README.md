@@ -1,7 +1,7 @@
 # readingroom
 
 Assumptions made
-- content types creation
+- doc types creation
 - template creation
 - service creation and consuming with di
 - property editor ui creation with lit & vite
