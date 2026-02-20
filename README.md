@@ -19,3 +19,4 @@ What you would improve on with more time
 - exception handlings
 - repository pattern
 - async / threading cancellation of api request if request exceed specific amount of time
+- refactor
