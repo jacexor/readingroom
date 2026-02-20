@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ReadingRoom.Core/ReadingRoom.Core.csproj" />
+  <Project Path="ReadingRoom.Models/ReadingRoom.Models.csproj" />
+  <Project Path="ReadingRoom.Service/ReadingRoom.Service.csproj" />
+  <Project Path="ReadingRoom/ReadingRoom.csproj" />
+</Solution>

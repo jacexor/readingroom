@@ -1,0 +1,19 @@
+{
+  "name": "PropertyEditor.Package",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "propertyEditorUi",
+      "alias": "Custom.PropertyEditorUI.TextBox",
+      "name": "Custom Text Box Property Editor UI",
+      "element": "/App_Plugins/propertyui/custom-propertyui.js",
+      "meta": {
+        "label": "Custom Textbox",
+        "propertyEditorSchemaAlias": "Umbraco.TextBox",
+        "icon": "icon-autofill",
+        "group": "common"
+      }
+    }
+  ]
+}
+

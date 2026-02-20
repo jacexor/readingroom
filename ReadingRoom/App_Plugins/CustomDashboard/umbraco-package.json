@@ -1,0 +1,23 @@
+{
+  "name": "Custom.Package",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "dashboard",
+      "alias": "custom.dashboard",
+      "name": "Custom Dashboard",
+      "js": "/App_Plugins/customdashboard/custom-dashboard.js",
+      "weight": -1,
+      "meta": {
+        "label": "Custom Dashboard",
+        "pathname": "custom-dashboard"
+      },
+      "conditions": [
+        {
+          "alias": "Umb.Condition.SectionAlias",
+          "match": "Umb.Section.Content"
+        }
+      ]
+    }
+  ]
+}

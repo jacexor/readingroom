@@ -1,0 +1,48 @@
+﻿@using ReadingRoom.Core.Controllers.Surface
+@using ReadingRoom.Models.SurfaceModels
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.IArticleListPageViewModel>
+@using ContentModels = ReadingRoom.Models.ViewModels.Interfaces;
+@{
+    Layout = "master.cshtml";
+}
+
+
+<div class="container mt-5 mb-5">
+    <div class="row gy-5">
+        <div class="col-12 col-lg-4">
+            @foreach (var item in Model.Articles)
+            {
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">@item.Title</h2>
+                        <div class="text-container">
+                            <p>
+                                @item.Intro
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="@item.ArticleUrl" class="btn btn-primary">
+                            Goto Article
+                        </a>
+                    </footer>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row gy-5">
+            <div class="col-12 col-lg-4">
+                @using (Html.BeginUmbracoForm<NewsletterSurfaceController>("HandleSubmit", null, FormMethod.Post))
+                {
+                    NewsletterRequestModel newsletterRequestModel = new NewsletterRequestModel();
+
+                    @Html.TextBoxFor(p => newsletterRequestModel.Message)
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

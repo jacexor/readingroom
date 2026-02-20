@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Api.Common" Version="17.2.0" />
+    <PackageReference Include="Umbraco.Cms.Api.Management" Version="17.2.0" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="17.2.0" />
+    <PackageReference Include="Umbraco.Cms.Infrastructure" Version="17.2.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="17.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReadingRoom.Models\ReadingRoom.Models.csproj" />
+    <ProjectReference Include="..\ReadingRoom.Service\ReadingRoom.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Umbraco.Web.Website">
+      <HintPath>D:\Nuget\umbraco.cms.web.website\17.2.0\lib\net10.0\Umbraco.Web.Website.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
